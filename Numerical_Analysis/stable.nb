@@ -1,0 +1,925 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     16774,        915]
+NotebookOptionsPosition[     15571,        871]
+NotebookOutlinePosition[     15999,        888]
+CellTagsIndexPosition[     15956,        885]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "n_Integer", "]"}], ":=", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", "0", "1"], 
+     RowBox[{
+      SuperscriptBox["x", "n"], 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"x", "-", "1"}]], 
+      RowBox[{"\[DifferentialD]", "x"}]}]}]}], ";"}],
+  FontSize->24]], "Input",
+ CellChangeTimes->{{3.553667810828125*^9, 3.553667816828125*^9}},
+ FontSize->24],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "n", "]"}], "=", 
+    RowBox[{"1", "-", 
+     RowBox[{"n", " ", 
+      RowBox[{"f", "[", 
+       RowBox[{"n", "-", "1"}], "]"}]}]}]}], ";", "          ", 
+   RowBox[{"(*", "    ", 
+    RowBox[{"n", "\[GreaterEqual]", "2"}], "     ", "*)"}]}],
+  FontSize->24]], "Input",
+ CellChangeTimes->{{3.5536678178125*^9, 3.55366783153125*^9}},
+ FontSize->24],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  StyleBox[
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", "1"}]], 
+      RowBox[{"n", "+", "1"}]], "\[LessEqual]", 
+     RowBox[{"f", "[", "n", "]"}], "\[LessEqual]", 
+     FractionBox["1", 
+      RowBox[{"n", "+", "1"}]]}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"f", "[", "n", "]"}], ">", "0"}], "   ", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Limit", "[", 
+      RowBox[{
+       RowBox[{"f", "[", "n", "]"}], ",", 
+       RowBox[{"n", "\[Rule]", "\[Infinity]"}]}], "]"}], "=", "0"}], 
+    "\[IndentingNewLine]"}],
+   FontSize->24]}]], "Input",
+ CellChangeTimes->{{3.553667806390625*^9, 3.553667808921875*^9}},
+ FontSize->24],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", "18", "]"}]], "Input",
+ FontSize->24],
+
+Cell[BoxData[
+ RowBox[{"2355301661033953", "-", 
+  FractionBox["6402373705728000", "\[ExponentialE]"]}]], "Output",
+ FontSize->24]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"f", "[", "18", "]"}], "]"}]], "Input",
+ FontSize->24],
+
+Cell[BoxData["0.`"], "Output",
+ FontSize->24]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "[", 
+   FractionBox["6402373705728000", "\[ExponentialE]"], "]"}], "=", 
+  "2355301661033953"}]], "Input",
+ FontSize->24],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["x", "18"], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"x", "-", "1"}]]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}]}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}],
+  FontSize->24]], "Input"],
+
+Cell[GraphicsData["PostScript", "\<\
+%!
+%%Creator: Mathematica
+%%AspectRatio: .61803 
+MathPictureStart
+/Mabs {
+Mgmatrix idtransform
+Mtmatrix dtransform
+} bind def
+/Mabsadd { Mabs
+3 -1 roll add
+3 1 roll add
+exch } bind def
+%% Graphics
+%%IncludeResource: font Courier
+%%IncludeFont: Courier
+/Courier findfont 10  scalefont  setfont
+% Scaling calculations
+0.0238095 0.952381 0 0.618034 [
+[.02381 -0.0125 -3 -9 ]
+[.02381 -0.0125 3 0 ]
+[.21429 -0.0125 -9 -9 ]
+[.21429 -0.0125 9 0 ]
+[.40476 -0.0125 -9 -9 ]
+[.40476 -0.0125 9 0 ]
+[.59524 -0.0125 -9 -9 ]
+[.59524 -0.0125 9 0 ]
+[.78571 -0.0125 -9 -9 ]
+[.78571 -0.0125 9 0 ]
+[.97619 -0.0125 -3 -9 ]
+[.97619 -0.0125 3 0 ]
+[ 0 0 -0.125 0 ]
+[-0.0125 .12361 -18 -4.5 ]
+[-0.0125 .12361 0 4.5 ]
+[-0.0125 .24721 -18 -4.5 ]
+[-0.0125 .24721 0 4.5 ]
+[-0.0125 .37082 -18 -4.5 ]
+[-0.0125 .37082 0 4.5 ]
+[-0.0125 .49443 -18 -4.5 ]
+[-0.0125 .49443 0 4.5 ]
+[-0.0125 .61803 -6 -4.5 ]
+[-0.0125 .61803 0 4.5 ]
+[ 0 0 -0.125 0 ]
+[ 0 .61803 .125 0 ]
+[ 1 0 .125 0 ]
+[ 0 0 0 0 ]
+[ 1 .61803 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+0 g
+.25 Mabswid
+[ ] 0 setdash
+.02381 0 m
+.02381 .00625 L
+s
+[(0)] .02381 -0.0125 0 1 Mshowa
+.21429 0 m
+.21429 .00625 L
+s
+[(0.2)] .21429 -0.0125 0 1 Mshowa
+.40476 0 m
+.40476 .00625 L
+s
+[(0.4)] .40476 -0.0125 0 1 Mshowa
+.59524 0 m
+.59524 .00625 L
+s
+[(0.6)] .59524 -0.0125 0 1 Mshowa
+.78571 0 m
+.78571 .00625 L
+s
+[(0.8)] .78571 -0.0125 0 1 Mshowa
+.97619 0 m
+.97619 .00625 L
+s
+[(1)] .97619 -0.0125 0 1 Mshowa
+.125 Mabswid
+.07143 0 m
+.07143 .00375 L
+s
+.11905 0 m
+.11905 .00375 L
+s
+.16667 0 m
+.16667 .00375 L
+s
+.2619 0 m
+.2619 .00375 L
+s
+.30952 0 m
+.30952 .00375 L
+s
+.35714 0 m
+.35714 .00375 L
+s
+.45238 0 m
+.45238 .00375 L
+s
+.5 0 m
+.5 .00375 L
+s
+.54762 0 m
+.54762 .00375 L
+s
+.64286 0 m
+.64286 .00375 L
+s
+.69048 0 m
+.69048 .00375 L
+s
+.7381 0 m
+.7381 .00375 L
+s
+.83333 0 m
+.83333 .00375 L
+s
+.88095 0 m
+.88095 .00375 L
+s
+.92857 0 m
+.92857 .00375 L
+s
+.25 Mabswid
+0 0 m
+1 0 L
+s
+0 .12361 m
+.00625 .12361 L
+s
+[(0.2)] -0.0125 .12361 1 0 Mshowa
+0 .24721 m
+.00625 .24721 L
+s
+[(0.4)] -0.0125 .24721 1 0 Mshowa
+0 .37082 m
+.00625 .37082 L
+s
+[(0.6)] -0.0125 .37082 1 0 Mshowa
+0 .49443 m
+.00625 .49443 L
+s
+[(0.8)] -0.0125 .49443 1 0 Mshowa
+0 .61803 m
+.00625 .61803 L
+s
+[(1)] -0.0125 .61803 1 0 Mshowa
+.125 Mabswid
+0 .0309 m
+.00375 .0309 L
+s
+0 .0618 m
+.00375 .0618 L
+s
+0 .09271 m
+.00375 .09271 L
+s
+0 .15451 m
+.00375 .15451 L
+s
+0 .18541 m
+.00375 .18541 L
+s
+0 .21631 m
+.00375 .21631 L
+s
+0 .27812 m
+.00375 .27812 L
+s
+0 .30902 m
+.00375 .30902 L
+s
+0 .33992 m
+.00375 .33992 L
+s
+0 .40172 m
+.00375 .40172 L
+s
+0 .43262 m
+.00375 .43262 L
+s
+0 .46353 m
+.00375 .46353 L
+s
+0 .52533 m
+.00375 .52533 L
+s
+0 .55623 m
+.00375 .55623 L
+s
+0 .58713 m
+.00375 .58713 L
+s
+.25 Mabswid
+0 0 m
+0 .61803 L
+s
+.02381 .61178 m
+.02381 .61803 L
+s
+.21429 .61178 m
+.21429 .61803 L
+s
+.40476 .61178 m
+.40476 .61803 L
+s
+.59524 .61178 m
+.59524 .61803 L
+s
+.78571 .61178 m
+.78571 .61803 L
+s
+.97619 .61178 m
+.97619 .61803 L
+s
+.125 Mabswid
+.07143 .61428 m
+.07143 .61803 L
+s
+.11905 .61428 m
+.11905 .61803 L
+s
+.16667 .61428 m
+.16667 .61803 L
+s
+.2619 .61428 m
+.2619 .61803 L
+s
+.30952 .61428 m
+.30952 .61803 L
+s
+.35714 .61428 m
+.35714 .61803 L
+s
+.45238 .61428 m
+.45238 .61803 L
+s
+.5 .61428 m
+.5 .61803 L
+s
+.54762 .61428 m
+.54762 .61803 L
+s
+.64286 .61428 m
+.64286 .61803 L
+s
+.69048 .61428 m
+.69048 .61803 L
+s
+.7381 .61428 m
+.7381 .61803 L
+s
+.83333 .61428 m
+.83333 .61803 L
+s
+.88095 .61428 m
+.88095 .61803 L
+s
+.92857 .61428 m
+.92857 .61803 L
+s
+.25 Mabswid
+0 .61803 m
+1 .61803 L
+s
+.99375 0 m
+1 0 L
+s
+.99375 .12361 m
+1 .12361 L
+s
+.99375 .24721 m
+1 .24721 L
+s
+.99375 .37082 m
+1 .37082 L
+s
+.99375 .49443 m
+1 .49443 L
+s
+.125 Mabswid
+.99625 .0309 m
+1 .0309 L
+s
+.99625 .0618 m
+1 .0618 L
+s
+.99625 .09271 m
+1 .09271 L
+s
+.99625 .15451 m
+1 .15451 L
+s
+.99625 .18541 m
+1 .18541 L
+s
+.99625 .21631 m
+1 .21631 L
+s
+.99625 .27812 m
+1 .27812 L
+s
+.99625 .30902 m
+1 .30902 L
+s
+.99625 .33992 m
+1 .33992 L
+s
+.99625 .40172 m
+1 .40172 L
+s
+.99625 .43262 m
+1 .43262 L
+s
+.99625 .46353 m
+1 .46353 L
+s
+.99625 .52533 m
+1 .52533 L
+s
+.99625 .55623 m
+1 .55623 L
+s
+.99625 .58713 m
+1 .58713 L
+s
+.25 Mabswid
+1 0 m
+1 .61803 L
+s
+0 0 m
+1 0 L
+1 .61803 L
+0 .61803 L
+closepath
+clip
+newpath
+.5 Mabswid
+.02381 0 m
+.02499 0 L
+.02605 0 L
+.02729 0 L
+.02846 0 L
+.02954 0 L
+.03053 0 L
+.03163 0 L
+.03279 0 L
+.03395 0 L
+.0352 0 L
+.03638 0 L
+.03746 0 L
+.03873 0 L
+.03944 0 L
+.04011 0 L
+.04132 0 L
+.04262 0 L
+.04327 0 L
+.04396 0 L
+.04519 0 L
+.04588 0 L
+.04652 0 L
+.04722 0 L
+.04797 0 L
+.04862 0 L
+.04933 0 L
+.05061 0 L
+.05186 0 L
+.05302 0 L
+.05414 0 L
+.05519 0 L
+.05634 0 L
+.05759 0 L
+.05882 0 L
+.06012 0 L
+.06123 0 L
+.06244 0 L
+.06315 0 L
+.06381 0 L
+.06453 0 L
+.06529 0 L
+.06657 0 L
+.06729 0 L
+.06797 0 L
+.06924 0 L
+.0704 0 L
+.07103 0 L
+.07173 0 L
+.073 0 L
+Mistroke
+.07376 0 L
+.07448 0 L
+.07513 0 L
+.07583 0 L
+.0766 0 L
+.0774 0 L
+.07809 0 L
+.07885 0 L
+.0802 0 L
+.08096 0 L
+.08166 0 L
+.0823 0 L
+.083 0 L
+.08427 0 L
+.08553 0 L
+.08671 0 L
+.088 0 L
+.08873 0 L
+.08939 0 L
+.09066 0 L
+.09204 0 L
+.09274 0 L
+.09349 0 L
+.09483 0 L
+.09609 0 L
+.09746 0 L
+.09875 0 L
+.09994 0 L
+.10101 0 L
+.1022 0 L
+.10343 0 L
+.10458 0 L
+.10584 0 L
+.10717 0 L
+.10831 0 L
+.10958 0 L
+.11092 0 L
+.11238 0 L
+.11375 0 L
+.11501 0 L
+.11731 0 L
+.11862 0 L
+.11983 0 L
+.12228 0 L
+.12366 0 L
+.12491 0 L
+.12606 0 L
+.12729 0 L
+.12948 0 L
+.1307 0 L
+Mistroke
+.13184 0 L
+.13318 0 L
+.13444 0 L
+.13671 0 L
+.13879 0 L
+.14102 0 L
+.14346 0 L
+.14479 0 L
+.14601 0 L
+.14733 0 L
+.14878 0 L
+.15121 0 L
+.15378 0 L
+.15612 0 L
+.15863 0 L
+.16099 0 L
+.16314 0 L
+.16583 0 L
+.16831 0 L
+.17103 0 L
+.17392 0 L
+.17642 0 L
+.17877 0 L
+.18135 0 L
+.18412 0 L
+.18652 0 L
+.18909 0 L
+.19151 0 L
+.1937 0 L
+.19629 0 L
+.19909 0 L
+.20174 0 L
+.20418 0 L
+.2067 0 L
+.20906 0 L
+.21165 0 L
+.21443 0 L
+.21734 0 L
+.2201 0 L
+.22258 0 L
+.22528 0 L
+.22785 0 L
+.23062 0 L
+.23306 0 L
+.23564 0 L
+.23797 0 L
+.24052 0 L
+.24501 0 L
+.24776 0 L
+.25026 0 L
+Mistroke
+.25295 0 L
+.25587 0 L
+.25858 0 L
+.26108 0 L
+.266 0 L
+.27065 0 L
+.27566 0 L
+.28039 0 L
+.28472 0 L
+.28977 0 L
+.29529 0 L
+.3005 0 L
+.30534 0 L
+.31041 0 L
+.3159 0 L
+.32108 0 L
+.32585 0 L
+.33016 0 L
+.3349 0 L
+.33984 0 L
+.34445 0 L
+.34946 0 L
+.3549 0 L
+.36004 0 L
+.3648 0 L
+.36907 0 L
+.37379 0 L
+.37872 0 L
+.38335 0 L
+.38804 0 L
+.39318 0 L
+.39854 0 L
+.40352 0 L
+.41247 0 L
+.41748 0 L
+.42203 0 L
+.42687 0 L
+.432 0 L
+.4412 0 L
+.44632 0 L
+.4511 0 L
+.45631 0 L
+.462 0 L
+.46739 0 L
+.4724 0 L
+.47758 0 L
+.48227 0 L
+.49125 0 L
+.50081 0 L
+.50569 0 L
+Mistroke
+.51085 0 L
+.52008 0 L
+.53002 0 L
+.53566 1e-005 L
+.54091 1e-005 L
+.55139 1e-005 L
+.5613 1e-005 L
+.57019 2e-005 L
+.57986 3e-005 L
+.58928 3e-005 L
+.59967 5e-005 L
+.61051 7e-005 L
+.62068 9e-005 L
+.63054 .00013 L
+.6409 .00018 L
+.64974 .00023 L
+.65941 .00031 L
+.66971 .00041 L
+.67905 .00054 L
+.68984 .00073 L
+.70001 .00097 L
+.70975 .00127 L
+.72006 .00168 L
+.72885 .00213 L
+.73852 .00274 L
+.7487 .00358 L
+.758 .00454 L
+.76872 .00597 L
+.7789 .0077 L
+.78853 .00977 L
+.79877 .01255 L
+.81718 .01952 L
+.82653 .02434 L
+.83662 .0308 L
+.85489 .04685 L
+.86444 .05812 L
+.8749 .07341 L
+.88594 .09366 L
+.89598 .1166 L
+.91556 .17749 L
+.92633 .22278 L
+.9365 .27552 L
+.9462 .33667 L
+.95648 .41547 L
+.97492 .60259 L
+.97619 .61803 L
+Mfstroke
+% End of Graphics
+MathPictureEnd
+\
+\>"], "Graphics",
+ ImageSize->{711, 439.25},
+ ImageMargins->{{43, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ ImageCache->GraphicsData["CompressedBitmap", "\<\
+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\
+\>"],
+ ImageRangeCache->{{{0, 710}, {438.25, 0}} -> {-0.0738364, -0.0418481, \
+0.00155871, 0.00240195}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"\[SkeletonIndicator]", "Graphics", "\[SkeletonIndicator]"}],
+  False,
+  Editable->False]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NIntegrate", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["x", "18"], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"x", "-", "1"}]]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ FontSize->24],
+
+Cell[BoxData["0.05011985495809438`"], "Output",
+ CellChangeTimes->{3.555589225125*^9},
+ FontSize->24]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"f1", "=", 
+    RowBox[{"N", "[", 
+     RowBox[{"f", "[", "1", "]"}], "]"}]}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox["For",
+    FontSize->24], 
+   StyleBox["[",
+    FontSize->24], 
+   RowBox[{
+    StyleBox[
+     RowBox[{"i", "=", "2"}],
+     FontSize->24], 
+    StyleBox[",",
+     FontSize->24], 
+    RowBox[{
+     StyleBox["i",
+      FontSize->24], 
+     StyleBox["\[LessEqual]",
+      FontSize->24], "18"}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"f2", "=", 
+      RowBox[{"1", "-", 
+       RowBox[{"i", "*", "f1"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"f1", "=", "f2"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\[IndentingNewLine]", "f2"}], "Input",
+ CellChangeTimes->{{3.55366793471875*^9, 3.553667968453125*^9}, {
+  3.553668080984375*^9, 3.553668204578125*^9}, {3.55366825990625*^9, 
+  3.553668261140625*^9}},
+ FontSize->24],
+
+Cell[BoxData[
+ RowBox[{"-", "0.029453670751536265`"}]], "Output",
+ FontSize->24]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"f2", "=", "0."}], ";"}],
+  FontSize->24], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox["For",
+    FontSize->24], 
+   StyleBox["[",
+    FontSize->24], 
+   RowBox[{
+    StyleBox[
+     RowBox[{"i", "=", "30"}],
+     FontSize->24], 
+    StyleBox[",",
+     FontSize->24], 
+    StyleBox[
+     RowBox[{"i", "\[GreaterEqual]", "19"}],
+     FontSize->24], ",", 
+    RowBox[{"i", "--"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"f1", "=", 
+      FractionBox[
+       RowBox[{"1", "-", "f2"}], "i"]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"f2", "=", "f1"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\[IndentingNewLine]", "f2"}], "Input",
+ CellChangeTimes->{{3.555588507390625*^9, 3.55558856675*^9}, {
+  3.5555887578125*^9, 3.555588761609375*^9}, {3.555588847453125*^9, 
+  3.55558884896875*^9}, {3.555589002703125*^9, 3.55558901484375*^9}, {
+  3.555589061359375*^9, 3.55558917503125*^9}},
+ FontSize->24],
+
+Cell[BoxData["0.050119854958094255`"], "Output",
+ CellChangeTimes->{3.5555891874375*^9},
+ FontSize->24]
+}, Open  ]]
+},
+WindowSize->{1016, 617},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+DockedCells->FEPrivate`FrontEndResource[
+ "FEExpressions", "CompatibilityToolbar"],
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 443, 14, 75, "Input"],
+Cell[991, 36, 417, 13, 42, "Input"],
+Cell[1411, 51, 809, 24, 285, "Input"],
+Cell[CellGroupData[{
+Cell[2245, 79, 70, 2, 42, "Input"],
+Cell[2318, 83, 130, 3, 64, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2485, 91, 98, 3, 42, "Input"],
+Cell[2586, 96, 45, 1, 42, "Output"]
+}, Open  ]],
+Cell[2646, 100, 161, 5, 71, "Input"],
+Cell[CellGroupData[{
+Cell[2832, 109, 437, 14, 48, "Input"],
+Cell[3272, 125, 9503, 636, 448, 7138, 594, "GraphicsData", "PostScript", \
+"Graphics"],
+Cell[12778, 763, 134, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12949, 772, 272, 9, 48, "Input"],
+Cell[13224, 783, 101, 2, 42, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13362, 790, 987, 34, 213, "Input"],
+Cell[14352, 826, 80, 2, 42, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14469, 833, 980, 31, 280, "Input"],
+Cell[15452, 866, 103, 2, 42, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

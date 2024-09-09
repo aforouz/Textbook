@@ -1,0 +1,125 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3047,         86]*)
+(*NotebookOutlinePosition[      3690,        108]*)
+(*  CellTagsIndexPosition[      3646,        104]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+    \(\(n = 5;\)\), "\[IndentingNewLine]", 
+    \(\(a = 0;\)\), "\[IndentingNewLine]", 
+    \(\(b = \[Pi];\)\), "\[IndentingNewLine]", 
+    \(\(\[CurlyPhi][
+          x_] := \(\((b - a)\) x + b + a\)\/2;\)\), "\[IndentingNewLine]", 
+    \(\(f[x_] := Sin[x];\)\), "\[IndentingNewLine]", 
+    \(\(ClearAll[xi];\)\), "\[IndentingNewLine]", 
+    \(\(xi = 
+        xi /. Solve[LegendreP[n, xi] \[Equal] 0, 
+            xi];\)\), "\[IndentingNewLine]", 
+    \(\(xi = Sort[N[xi]];\)\), "\[IndentingNewLine]", 
+    \(\(wi = 
+        Table[\(2 \((1 - xi[\([i]\)]^2)\)\)\/\((n\ LegendreP[n - 1, \
+xi[\([i]\)]])\)\^2, {i, 1, n}];\)\), "\[IndentingNewLine]", 
+    \(\(En = \(2\^\(2  n + 1\)\ \((\(n!\))\)\^4\)\/\(\((2  n + 1)\)\ \
+\((\(\((2  n)\)!\))\)\^3\);\)\), "\[IndentingNewLine]", 
+    \(\(int = \(\(b - a\)\/2\) \(\[Sum]\+\(i = 1\)\%n 
+                wi[\([i]\)]\ f[\[CurlyPhi][
+                  xi[\([i]\)]]]\);\)\), "\[IndentingNewLine]", 
+    \(Abs[int - Integrate[f[x], {x, a, b}]]\), "\[IndentingNewLine]", 
+    \(\((\(b - a\)\/2)\)^\((2  n + 1)\)\ En // N\)}], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(1.1028447266525632`*^-7\)], "Output",
+  FontSize->24],
+
+Cell[BoxData[
+    \(1.1606246765108258`*^-7\)], "Output",
+  FontSize->24]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{900, 666},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 1103, 22, 641, "Input"],
+Cell[2882, 77, 73, 2, 42, "Output"],
+Cell[2958, 81, 73, 2, 42, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

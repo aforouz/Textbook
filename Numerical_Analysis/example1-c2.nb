@@ -1,0 +1,347 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     13166,        292]*)
+(*NotebookOutlinePosition[     13810,        314]*)
+(*  CellTagsIndexPosition[     13766,        310]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(\(For[l = 0.1, l \[LessEqual] 0.3, 
+        l += 0.1, {\[IndentingNewLine]For[t = 3, t \[LessEqual] 18, 
+            t += 3, {\[IndentingNewLine]\[Theta]m = 
+                t*Pi/180; \[IndentingNewLine]\[Epsilon] = 
+                0.0001; \[IndentingNewLine]g = 9.8; \[IndentingNewLine]TL = 
+                2  Pi \@\( l\/g\); \[IndentingNewLine]k = 
+                1; \[IndentingNewLine]M = \((\(2  k - 1\)\/\(2  k\))\)\^2; \
+\[IndentingNewLine]T1 = TL; \[IndentingNewLine]st = 
+                Sin[\[Theta]m\/2]; \[IndentingNewLine]CC = 
+                TL*M*st\^\(2  k\); \[IndentingNewLine]T2 = 
+                T1 + CC; \[IndentingNewLine]While[
+                CC > \[Epsilon], {\[IndentingNewLine]\(k++\); \
+\[IndentingNewLine]M *= \((\(2  k - 1\)\/\(2  k\))\)\^2; \
+\[IndentingNewLine]T1 = T2; \[IndentingNewLine]CC = 
+                    TL*M*st\^\(2  k\); \[IndentingNewLine]T2 = 
+                    T1 + CC;\[IndentingNewLine]}]; \[IndentingNewLine]TN = 
+                T2; \[IndentingNewLine]Print["\<l = \>", 
+                Floor[l*100], "\<     \[Theta]m = \>", t, "\<     T_L = \>", 
+                TL, "\<     T_N = \>", TN, "\<     T_N-T_L = \>", 
+                TN - TL];}]}];\)\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]3\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.6348063333717333`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.00010877077768101096`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 3, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63480633337173331, 
+        "     T_N-T_L = ", .00010877077768101096],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]6\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.6351328496736997`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0004352870796473507`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 6, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63513284967369965, 
+        "     T_N-T_L = ", .00043528707964735069],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]9\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.635677717346522`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0009801547524697085`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 9, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63567771734652201, 
+        "     T_N-T_L = ", .00098015475246970851],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]12\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.6364419260107003`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.001744363416647965`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 12, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63644192601070027, 
+        "     T_N-T_L = ", .0017443634166479649],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]15\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.637426819143204`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.002729256549151682`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 15, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63742681914320398, 
+        "     T_N-T_L = ", .0027292565491516818],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]10\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]18\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.6346975625940523`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.6386340527263351`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0039364901322828105`\),
+      SequenceForm[ 
+      "l = ", 10, "     \[Theta]m = ", 18, "     T_L = ", .6346975625940523, 
+        "     T_N = ", .63863405272633511, 
+        "     T_N-T_L = ", .0039364901322828105],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]3\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.8977517261346415`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0001538251089863163`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 3, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .89775172613464149, 
+        "     T_N-T_L = ", .00015382510898631629],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]6\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.8982134899172182`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0006155888915629903`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 6, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .89821348991721817, 
+        "     T_N-T_L = ", .00061558889156299035],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]9\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.8989840491698222`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0013861481441670431`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 9, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .89898404916982222, 
+        "     T_N-T_L = ", .0013861481441670431],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]12\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.9000648034271862`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0024669024015310237`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 12, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .9000648034271862, 
+        "     T_N-T_L = ", .0024669024015310237],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]15\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.901457652652661`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.003859751627005803`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 15, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .90145765265266098, 
+        "     T_N-T_L = ", .003859751627005803],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]20\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]18\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]0.8975979010256552`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]0.9031649387588774`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.005567037733222202`\),
+      SequenceForm[ 
+      "l = ", 20, "     \[Theta]m = ", 18, "     T_L = ", .89759790102565518, 
+        "     T_N = ", .90316493875887738, 
+        "     T_N-T_L = ", .0055670377332222021],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]3\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.0995168223663485`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0001883965133220311`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 3, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.0995168223663485, 
+        "     T_N-T_L = ", .00018839651332203111],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]6\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.100082365190854`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.000753939337827525`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 6, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.100082365190854, 
+        "     T_N-T_L = ", .00075393933782752498],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]9\[InvisibleSpace]"     T_L = \
+"\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.101026103683584`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0016976778305575202`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 9, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.101026103683584, 
+        "     T_N-T_L = ", .0016976778305575202],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]12\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.102349751917525`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.003021326064498453`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 12, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.1023497519175249, 
+        "     T_N-T_L = ", .003021326064498453],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]15\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.1040556368630472`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.004727211010020715`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 15, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.1040556368630472, 
+        "     T_N-T_L = ", .0047272110100207154],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("l = "\[InvisibleSpace]30\[InvisibleSpace]"     \
+\[Theta]m = "\[InvisibleSpace]18\[InvisibleSpace]"     T_L = "\
+\[InvisibleSpace]1.0993284258530265`\[InvisibleSpace]"     T_N = "\
+\[InvisibleSpace]1.1061466267656337`\[InvisibleSpace]"     T_N-T_L = "\
+\[InvisibleSpace]0.0068182009126072085`\),
+      SequenceForm[ 
+      "l = ", 30, "     \[Theta]m = ", 18, "     T_L = ", 1.0993284258530265, 
+        "     T_N = ", 1.1061466267656337, 
+        "     T_N-T_L = ", .0068182009126072085],
+      Editable->False]], "Print"]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 723}},
+WindowSize->{1016, 696},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 1238, 20, 506, "Input"],
+Cell[3017, 75, 561, 10, 25, "Print"],
+Cell[3581, 87, 560, 10, 25, "Print"],
+Cell[4144, 99, 559, 10, 25, "Print"],
+Cell[4706, 111, 560, 10, 25, "Print"],
+Cell[5269, 123, 559, 10, 25, "Print"],
+Cell[5831, 135, 561, 10, 25, "Print"],
+Cell[6395, 147, 561, 10, 25, "Print"],
+Cell[6959, 159, 561, 10, 25, "Print"],
+Cell[7523, 171, 560, 10, 25, "Print"],
+Cell[8086, 183, 561, 10, 25, "Print"],
+Cell[8650, 195, 559, 10, 25, "Print"],
+Cell[9212, 207, 561, 10, 25, "Print"],
+Cell[9776, 219, 561, 10, 25, "Print"],
+Cell[10340, 231, 558, 10, 25, "Print"],
+Cell[10901, 243, 558, 10, 25, "Print"],
+Cell[11462, 255, 559, 10, 25, "Print"],
+Cell[12024, 267, 561, 10, 25, "Print"],
+Cell[12588, 279, 562, 10, 25, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

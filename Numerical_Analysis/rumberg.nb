@@ -1,0 +1,128 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      2805,         87]*)
+(*NotebookOutlinePosition[      3448,        109]*)
+(*  CellTagsIndexPosition[      3404,        105]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[{
+    \(\(a = 0;\)\), "\[IndentingNewLine]", 
+    \(\(b = \[Pi];\)\), "\[IndentingNewLine]", 
+    \(\(f[x_] := Sin[x];\)\), "\[IndentingNewLine]", 
+    \(\(h[i_Integer] := \(b - a\)\/2\^i;\)\), "\[IndentingNewLine]", 
+    \(\(xj[j_Integer, i_Integer] := a + j\ h[i];\)\), "\[IndentingNewLine]", 
+    \(\(T[0, 
+          i_Integer] := \(h[i]\/2\) \((f[xj[0, i]] + 
+              2 \(\[Sum]\+\(j = 1\)\%\(2\^i - 1\)f[xj[j, i]]\) + 
+              f[xj[2\^i, i]])\);\)\), "\[IndentingNewLine]", 
+    \(\(T[p_Integer, 
+          i_Integer] := \(4\^p\ T[p - 1, i + 1] - T[p - 1, i]\)\/\(4\^p - \
+1\);\)\)}], "Input",
+  FontSize->24],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(T[1, 0] // N\), "\[IndentingNewLine]", 
+    \(T[2, 0] // N\), "\[IndentingNewLine]", 
+    \(T[3, 0] // N\)}], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(2.0943951023931953`\)], "Output",
+  FontSize->24],
+
+Cell[BoxData[
+    \(1.9985707318238357`\)], "Output",
+  FontSize->24],
+
+Cell[BoxData[
+    \(2.0000055499796705`\)], "Output",
+  FontSize->24]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{903, 668},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 639, 13, 400, "Input"],
+
+Cell[CellGroupData[{
+Cell[2418, 68, 155, 4, 109, "Input"],
+Cell[2576, 74, 69, 2, 41, "Output"],
+Cell[2648, 78, 69, 2, 41, "Output"],
+Cell[2720, 82, 69, 2, 41, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
