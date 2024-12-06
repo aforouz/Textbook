@@ -1,0 +1,262 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      7214,        205]*)
+(*NotebookOutlinePosition[      7858,        227]*)
+(*  CellTagsIndexPosition[      7814,        223]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+    \(Print["\<MachineEpsilon->\>", $MachineEpsilon, "\<   \>", 
+      BaseForm[$MachineEpsilon, 2]]; Print[];\), "\[IndentingNewLine]", 
+    \(Print["\<MaxMachineNumber->\>", $MaxMachineNumber, "\<   \>", 
+      BaseForm[$MaxMachineNumber, 2]]; Print[];\), "\[IndentingNewLine]", 
+    \(Print["\<MinMachineNumber->\>", $MinMachineNumber, "\<   \>", 
+      BaseForm[$MinMachineNumber, 2]]; Print[];\), "\[IndentingNewLine]", 
+    \(\(x = $MinNumber;\)\), "\[IndentingNewLine]", 
+    \(Print["\<MinNumber->\>", x, "\<   \>", BaseForm[x, 2]]; 
+    Print[];\), "\[IndentingNewLine]", 
+    \(\(y = $MaxNumber;\)\), "\[IndentingNewLine]", 
+    \(Print["\<MaxNumber->\>", y, "\<   \>", BaseForm[y, 2]]; 
+    Print[];\), "\[IndentingNewLine]", 
+    \(\(While[
+        x \[NotEqual] 
+          Underflow[], {\[IndentingNewLine]\(x = 
+              x/2;\)\[IndentingNewLine]}];\)\), "\[IndentingNewLine]", 
+    \(\(Print[];\)\), "\[IndentingNewLine]", 
+    \(\(While[
+        y \[NotEqual] 
+          Overflow[], {\[IndentingNewLine]\(y = 
+              y*2;\)\[IndentingNewLine]}];\)\)}], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"MachineEpsilon->\"\>", "\[InvisibleSpace]", 
+        "2.220446049250313`*^-16", "\[InvisibleSpace]", "\<\"   \"\>", 
+        "\[InvisibleSpace]", 
+        TagBox[
+          InterpretationBox[\("1."\_2\[Times]2\^"-52"\),
+            .22204460492503131*^-15,
+            AutoDelete->True],
+          (BaseForm[ #, 2]&)]}],
+      SequenceForm[ "MachineEpsilon->", .22204460492503131*^-15, "   ", 
+        BaseForm[ .22204460492503131*^-15, 2]],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"MaxMachineNumber->\"\>", "\[InvisibleSpace]", 
+        "1.7976931348623157`*^308", "\[InvisibleSpace]", "\<\"   \"\>", 
+        "\[InvisibleSpace]", 
+        TagBox[
+          InterpretationBox[\("1."\_2\[Times]2\^"1024"\),
+            .17976931348623157*^309,
+            AutoDelete->True],
+          (BaseForm[ #, 2]&)]}],
+      SequenceForm[ "MaxMachineNumber->", .17976931348623157*^309, "   ", 
+        BaseForm[ .17976931348623157*^309, 2]],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"MinMachineNumber->\"\>", "\[InvisibleSpace]", 
+        "2.2250738585072014`*^-308", "\[InvisibleSpace]", "\<\"   \"\>", 
+        "\[InvisibleSpace]", 
+        TagBox[
+          InterpretationBox[\("1."\_2\[Times]2\^"-1022"\),
+            .22250738585072014*^-307,
+            AutoDelete->True],
+          (BaseForm[ #, 2]&)]}],
+      SequenceForm[ "MinMachineNumber->", .22250738585072014*^-307, "   ", 
+        BaseForm[ .22250738585072014*^-307, 2]],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"MinNumber->\"\>", "\[InvisibleSpace]", 
+        "5.2077239409589238546156053328`15.954589770191005*^-646456888", 
+        "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", 
+        TagBox[
+          
+          InterpretationBox[\("1.\
+0000000000000000000000000000000000000000000000000000"\_2\[Times]2\^"-\
+2147483296"\),
+            5.207723940958924`15.954589770191005*^-646456888,
+            AutoDelete->True],
+          (BaseForm[ #, 2]&)]}],
+      SequenceForm[ 
+      "MinNumber->", 5.207723940958924`15.954589770191005*^-646456888, "   ", 
+        
+        BaseForm[ 5.207723940958924`15.954589770191005*^-646456888, 2]],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"MaxNumber->\"\>", "\[InvisibleSpace]", 
+        "1.9202246726923565854204690606`15.954589770191005*^646456887", 
+        "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", 
+        TagBox[
+          
+          InterpretationBox[\("10.\
+000000000000000000000000000000000000000000000000000"\_2\[Times]2\^\
+"2147483295"\),
+            1.920224672692357`15.954589770191005*^646456887,
+            AutoDelete->True],
+          (BaseForm[ #, 2]&)]}],
+      SequenceForm[ 
+      "MaxNumber->", 1.920224672692357`15.954589770191005*^646456887, "   ", 
+        BaseForm[ 1.920224672692357`15.954589770191005*^646456887, 2]],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(General::"unfl"\), \(\(:\)\(\ \)\), "\<\"Underflow occurred in \
+computation. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::unfl\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(\*"\<\"\"\>"\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(General::"ovfl"\), \(\(:\)\(\ \)\), "\<\"Overflow occurred in \
+computation. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::ovfl\\\"]\\)\"\>"}]], "Message"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(x = 1.0 + $MachineEpsilon;\)\), "\[IndentingNewLine]", 
+    \(\(y = 1.0;\)\), "\[IndentingNewLine]", 
+    \(x - y\), "\[IndentingNewLine]", 
+    \(x - y \[Equal] 0\), "\[IndentingNewLine]", 
+    \(x \[Equal] y\)}], "Input"],
+
+Cell[BoxData[
+    \(2.220446049250313`*^-16\)], "Output"],
+
+Cell[BoxData[
+    \(False\)], "Output"],
+
+Cell[BoxData[
+    \(True\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{1016, 666},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 1104, 21, 290, "Input"],
+Cell[2883, 76, 531, 12, 25, "Print"],
+Cell[3417, 90, 45, 1, 25, "Print"],
+Cell[3465, 93, 537, 12, 25, "Print"],
+Cell[4005, 107, 45, 1, 25, "Print"],
+Cell[4053, 110, 542, 12, 25, "Print"],
+Cell[4598, 124, 45, 1, 25, "Print"],
+Cell[4646, 127, 725, 17, 25, "Print"],
+Cell[5374, 146, 45, 1, 25, "Print"],
+Cell[5422, 149, 711, 16, 25, "Print"],
+Cell[6136, 167, 45, 1, 25, "Print"],
+Cell[6184, 170, 269, 4, 22, "Message"],
+Cell[6456, 176, 45, 1, 25, "Print"],
+Cell[6504, 179, 268, 4, 22, "Message"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6809, 188, 246, 5, 110, "Input"],
+Cell[7058, 195, 57, 1, 29, "Output"],
+Cell[7118, 198, 39, 1, 29, "Output"],
+Cell[7160, 201, 38, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

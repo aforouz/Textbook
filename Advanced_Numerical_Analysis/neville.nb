@@ -1,0 +1,301 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      9685,        239]*)
+(*NotebookOutlinePosition[     10328,        261]*)
+(*  CellTagsIndexPosition[     10284,        257]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+    \(\(ClearAll[T];\)\), "\[IndentingNewLine]", 
+    \(\(x = 1.5;\)\), "\[IndentingNewLine]", 
+    \(\(xi = {1.0, 1.3, 1.6, 1.9, 2.2};\)\), "\[IndentingNewLine]", 
+    \(\(fi = {0.7651977, 0.6200860, 0.4554022, 0.2818186, 
+          0.1103623};\)\), "\[IndentingNewLine]", 
+    \(\(T[i_Integer, 0, x_] := fi[\([i + 1]\)];\)\), "\[IndentingNewLine]", 
+    \(\(T[i_Integer, k_Integer, 
+          x_] := \(\((x - xi[\([i - k + 1]\)])\) T[i, k - 1, x] - \((x - \
+xi[\([i + 1]\)])\) T[i - 1, k - 1, x]\)\/\(xi[\([i + 1]\)] - xi[\([i - k + 1]\
+\)]\);\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[1, 1, x]];\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[2, 1, x], "\<     \>", 
+        T[2, 2, x]];\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[3, 1, x], "\<     \>", T[3, 2, x], "\<     \>", 
+        T[3, 3, x]];\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[4, 1, x], "\<     \>", T[4, 2, x], "\<     \>", 
+        T[4, 3, x], "\<     \>", T[4, 4, x]];\)\), "\[IndentingNewLine]", 
+    \(\(xi = Append[xi, 2.5];\)\), "\[IndentingNewLine]", 
+    \(\(fi = Append[fi, \(-0.0483838\)];\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[5, 1, x], "\<     \>", T[5, 2, x], "\<     \>", 
+        T[5, 3, x], "\<     \>", T[5, 4, x], "\<     \>", 
+        T[5, 5, x]];\)\)}], "Input"],
+
+Cell[BoxData[
+    \(0.5233448666666668`\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\(0.5102968000000001`\[InvisibleSpace]"     "\
+\[InvisibleSpace]0.5124714777777779`\),
+      SequenceForm[ .51029680000000011, "     ", .51247147777777791],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\(0.5132634`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5112856666666667`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5118126938271605`\),
+      SequenceForm[ .51326340000000004, "     ", .51128566666666675, 
+        "     ", .51181269382716055],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\(0.5104269999999997`\[InvisibleSpace]"     "\
+\[InvisibleSpace]0.5137361333333335`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5118302148148149`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5118199942386832`\),
+      SequenceForm[ .51042699999999974, "     ", .51373613333333346, 
+        "     ", .51183021481481494, "     ", .51181999423868318],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\(0.480769866666667`\[InvisibleSpace]"     "\
+\[InvisibleSpace]0.5301984222222217`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.511906990123457`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5118430106995886`\[InvisibleSpace]"     \
+"\[InvisibleSpace]0.5118276663923182`\),
+      SequenceForm[ .48076986666666699, "     ", .53019842222222169, 
+        "     ", .51190699012345697, "     ", .5118430106995886, 
+        "     ", .51182766639231825],
+      Editable->False]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(xi = {1.0, 1.3, 1.6, 1.9, 2.2, 2.5};\)\), "\[IndentingNewLine]", 
+    \(\(fi = {0.7651977, 0.6200860, 0.4554022, 0.2818186, 
+          0.1103623, \(-0.0483838\)};\)\), "\[IndentingNewLine]", 
+    \(\(n = Length[fi];\)\), "\[IndentingNewLine]", 
+    \(\(T = Table[0, {n}, {n}];\)\), "\[IndentingNewLine]", 
+    \(\(For[i = 1, 
+        i \[LessEqual] 
+          n, \(i++\), {\[IndentingNewLine]T[\([i, 1]\)] = 
+            fi[\([i]\)]; \[IndentingNewLine]For[k = 1, 
+            k \[LessEqual] 
+              i - 1, \(k++\), \[IndentingNewLine]\(T[\([i, 
+                    k + 1]\)] = \(\((x - xi[\([i - k]\)])\) T[\([i, k]\)] - \
+\((x - xi[\([i]\)])\) T[\([i - 1, k]\)]\)\/\(xi[\([i]\)] - xi[\([i - k]\)]\);\
+\)\[IndentingNewLine]];\[IndentingNewLine]}];\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[T]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"0.7651977`", "0", "0", "0", "0", "0"},
+            {"0.620086`", "0.5233448666666668`", "0", "0", "0", "0"},
+            {"0.4554022`", "0.5102968000000001`", "0.5124714777777779`", "0", 
+              "0", "0"},
+            {"0.2818186`", "0.5132634`", "0.5112856666666667`", 
+              "0.5118126938271605`", "0", "0"},
+            {"0.1103623`", "0.5104269999999997`", "0.5137361333333335`", 
+              "0.5118302148148149`", "0.5118199942386832`", "0"},
+            {\(-0.0483838`\), "0.480769866666667`", "0.5301984222222217`", 
+              "0.511906990123457`", "0.5118430106995886`", 
+              "0.5118276663923182`"}
+            },
+          RowSpacings->1,
+          ColumnSpacings->1,
+          ColumnAlignments->{Left}], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(\(x = N[Sqrt[2]/2];\)\), "\[IndentingNewLine]", 
+    \(\(a = 0;\)\), "\[IndentingNewLine]", 
+    \(\(b = 1;\)\), "\[IndentingNewLine]", 
+    \(\(F[x_] := Exp[x]\ Sin[10  x];\)\), "\[IndentingNewLine]", 
+    \(\(Tol = 10^\(-10\);\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(For[n = 2, 
+        n \[LessEqual] 
+          100, \(n++\), {\[IndentingNewLine]xi = 
+            Table[a + \((i - 1)\)\ \(b - a\)\/\(n - 1\), {i, 1, 
+                n}]; \[IndentingNewLine]fi = 
+            Table[N[F[xi[\([i]\)]]], {i, 1, n}]; \[IndentingNewLine]T = 
+            Table[0, {n}, {n}]; \[IndentingNewLine]For[i = 1, 
+            i \[LessEqual] 
+              n, \(i++\), {\[IndentingNewLine]T[\([i, 1]\)] = 
+                fi[\([i]\)]; \[IndentingNewLine]For[k = 1, 
+                k \[LessEqual] 
+                  i - 1, \(k++\), \[IndentingNewLine]\(T[\([i, 
+                        k + 1]\)] = \(\((x - xi[\([i - k]\)])\) T[\([i, k]\)] \
+- \((x - xi[\([i]\)])\) T[\([i - 1, k]\)]\)\/\(xi[\([i]\)] - xi[\([i - \
+k]\)]\);\)\[IndentingNewLine]];\[IndentingNewLine]}]; \[IndentingNewLine]If[
+            Abs[T[\([n, n]\)] - F[x]] \[LessEqual] Tol, 
+            Break[]]\[IndentingNewLine]}];\)\), "\[IndentingNewLine]", 
+    \(\(Print[n];\)\), "\[IndentingNewLine]", 
+    \(\(Print[T[\([n, n]\)]];\)\), "\[IndentingNewLine]", 
+    \(\(Print[N[F[x]]];\)\)}], "Input"],
+
+Cell[BoxData[
+    \(18\)], "Print"],
+
+Cell[BoxData[
+    \(1.4376522058910215`\)], "Print"],
+
+Cell[BoxData[
+    \(1.4376522058867134`\)], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(For[n = 2, 
+        n \[LessEqual] 
+          100, \(n++\), {\[IndentingNewLine]xi = 
+            Table[a + \((i - 1)\)\ \(b - a\)\/\(n - 1\), {i, 1, 
+                n}]; \[IndentingNewLine]fi = 
+            Table[N[F[xi[\([i]\)]]], {i, 1, n}]; \[IndentingNewLine]T = 
+            Table[0, {n}, {n}]; \[IndentingNewLine]Q = 
+            Table[0, {n}, {n}]; \[IndentingNewLine]DD = 
+            Table[0, {n}, {n}]; \[IndentingNewLine]For[i = 1, 
+            i \[LessEqual] 
+              n, \(i++\), {\[IndentingNewLine]Q[\([i, 1]\)] = 
+                fi[\([i]\)]; \[IndentingNewLine]DD[\([i, 1]\)] = 
+                fi[\([i]\)]; \[IndentingNewLine]For[k = 1, 
+                k \[LessEqual] 
+                  i - 1, \(k++\), \[IndentingNewLine]Q[\([i, 
+                      k + 1]\)] = \(\((xi[\([i]\)] - x)\) \((DD[\([i, k]\)] - \
+Q[\([i - 1, k]\)])\)\)\/\(xi[\([i - k]\)] - xi[\([i]\)]\); \
+\[IndentingNewLine]DD[\([i, 
+                      k + 1]\)] = \(\((xi[\([i - k]\)] - x)\) \((DD[\([i, \
+k]\)] - Q[\([i - 1, k]\)])\)\)\/\(xi[\([i - k]\)] - xi[\([i]\)]\);\
+\[IndentingNewLine]];\[IndentingNewLine]}]; \[IndentingNewLine]Tnn = 
+            fi[\([n]\)] + \[Sum]\+\(k = 2\)\%n 
+                  Q[\([n, k]\)]; \[IndentingNewLine]If[
+            Abs[Tnn - F[x]] \[LessEqual] Tol, 
+            Break[]]\[IndentingNewLine]}];\)\), "\[IndentingNewLine]", 
+    \(\(Print[n];\)\), "\[IndentingNewLine]", 
+    \(\(Print[Tnn];\)\), "\[IndentingNewLine]", 
+    \(\(Print[N[F[x]]];\)\)}], "Input"],
+
+Cell[BoxData[
+    \(18\)], "Print"],
+
+Cell[BoxData[
+    \(1.4376522058910253`\)], "Print"],
+
+Cell[BoxData[
+    \(1.4376522058867134`\)], "Print"]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 723}},
+WindowSize->{904, 672},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 1280, 22, 286, "Input"],
+Cell[3059, 77, 52, 1, 25, "Print"],
+Cell[3114, 80, 226, 4, 25, "Print"],
+Cell[3343, 86, 317, 6, 25, "Print"],
+Cell[3663, 94, 417, 7, 25, "Print"],
+Cell[4083, 103, 514, 9, 25, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4634, 117, 841, 15, 250, "Input"],
+Cell[5478, 134, 924, 19, 119, "Output"]
+}, Open  ]],
+Cell[6417, 156, 265, 5, 110, "Input"],
+
+Cell[CellGroupData[{
+Cell[6707, 165, 1107, 20, 346, "Input"],
+Cell[7817, 187, 35, 1, 25, "Print"],
+Cell[7855, 190, 52, 1, 25, "Print"],
+Cell[7910, 193, 52, 1, 25, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7999, 199, 1522, 28, 485, "Input"],
+Cell[9524, 229, 35, 1, 25, "Print"],
+Cell[9562, 232, 52, 1, 25, "Print"],
+Cell[9617, 235, 52, 1, 25, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

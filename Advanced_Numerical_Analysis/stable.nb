@@ -1,0 +1,317 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      7345,        263]*)
+(*NotebookOutlinePosition[      7988,        285]*)
+(*  CellTagsIndexPosition[      7944,        281]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    StyleBox[\(f[
+            n_Integer] := \[Integral]\_0\%1\( 
+                  x\^n\) \(\[ExponentialE]\^\(x - 1\)\) \[DifferentialD]x;\),
+      FontSize->24]], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\[IndentingNewLine]", 
+      RowBox[{
+        StyleBox[\(f[n] = 
+            1 - n\ f[n - 1]; \ \ \ \ \ \ \ \ \ \ \ \ \ \ n \[GreaterEqual] \ 
+            2\),
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox[\(\[ExponentialE]\^\(-1\)\/\(n + 1\) \[LessEqual] 
+            f[n] \[LessEqual] 1\/\(n + 1\)\),
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox[\(f[n] > 0\),
+          FontSize->24], 
+        StyleBox["   ",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24], 
+        StyleBox[\(Limit[f[n], n \[Rule] \[Infinity]] = 0\),
+          FontSize->24], "\[IndentingNewLine]", 
+        StyleBox["\[IndentingNewLine]",
+          FontSize->24]}]}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["f1",
+        FontSize->24], 
+      StyleBox["=",
+        FontSize->24], 
+      RowBox[{
+        StyleBox[\(f[1]\),
+          FontSize->24], 
+        StyleBox["//",
+          FontSize->24], 
+        RowBox[{
+          StyleBox["N",
+            FontSize->24], 
+          StyleBox["                         ",
+            FontSize->24], 
+          StyleBox["0.36787944117144233",
+            FontSize->24]}]}]}]], "Input"],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["f2",
+        FontSize->24], 
+      StyleBox["=",
+        FontSize->24], 
+      RowBox[{
+        StyleBox[\(1 - 2  f[1]\),
+          FontSize->24], 
+        StyleBox["//",
+          FontSize->24], 
+        RowBox[{
+          StyleBox["N",
+            FontSize->24], 
+          StyleBox["                 ",
+            FontSize->24], 
+          StyleBox["0.26424111765711533",
+            FontSize->24]}]}]}]], "Input"],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["f3",
+        FontSize->24], 
+      StyleBox["=",
+        FontSize->24], 
+      RowBox[{
+        StyleBox[\(1 - 3  f[2]\),
+          FontSize->24], 
+        StyleBox["//",
+          FontSize->24], 
+        RowBox[{
+          StyleBox["N",
+            FontSize->24], 
+          StyleBox["                 ",
+            FontSize->24], 
+          StyleBox["0.20727664702865412",
+            FontSize->24]}]}]}]], "Input"],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["f17",
+        FontSize->24], 
+      StyleBox["=",
+        FontSize->24], 
+      RowBox[{
+        StyleBox[\(1 - 17  f[16]\),
+          FontSize->24], 
+        StyleBox["//",
+          FontSize->24], 
+        RowBox[{
+          StyleBox["N",
+            FontSize->24], 
+          StyleBox["          ",
+            FontSize->24], 
+          StyleBox["0.05303001403808594",
+            FontSize->24]}]}]}]], "Input"],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["f18",
+        FontSize->24], 
+      StyleBox["=",
+        FontSize->24], 
+      RowBox[{
+        StyleBox[\(1 - 18  f[17]\),
+          FontSize->24], 
+        StyleBox["//",
+          FontSize->24], 
+        RowBox[{
+          StyleBox["N",
+            FontSize->24], 
+          StyleBox["       ",
+            FontSize->24], 
+          StyleBox["-",
+            FontSize->24], 
+          StyleBox["0.125",
+            FontSize->24]}]}]}]], "Input"],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox[\(f[18]\),
+        FontSize->24], 
+      StyleBox["//",
+        FontSize->24], 
+      RowBox[{
+        StyleBox["N",
+          FontSize->24], 
+        StyleBox[
+          RowBox[{
+            StyleBox["              ",
+              FontSize->24], 
+            StyleBox["                  ",
+              FontSize->24]}]], 
+        StyleBox["0.050119854958094255",
+          FontSize->24]}]}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\[IndentingNewLine]", 
+      StyleBox[\(f[
+            n - 1] = \(1 - f[n]\)\/n; \ \ \ \ \ \ \ \ \ \ \ \ \ \ n \
+\[GreaterEqual] \ 2\),
+        FontSize->24]}]], "Input"],
+
+Cell[BoxData[{
+    \(\(f25 = 0;\)\), "\[IndentingNewLine]", 
+    \(f24 = \(1 - 0\)\/24 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.041666666666666664\)}], \
+"Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f23 = \(1 - f24\)\/23 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.041666666666666664\)], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f22 = \(1 - f23\)\/22 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.043560606060606064\)], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f21 = \(1 - f22\)\/21 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.04554473304473304\)], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f20 = \(1 - f21\)\/20 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.04772276334776335\)], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f19 = \(1 - f20\)\/19 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.05011985456064403\)], "Input",
+  FontSize->24],
+
+Cell[BoxData[
+    \(f18 = \(1 - f19\)\/18 // 
+        N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0.05277111919107533\)], "Input",
+  FontSize->24]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{900, 660},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 187, 4, 72, "Input"],
+Cell[1944, 57, 1242, 35, 338, "Input"],
+Cell[3189, 94, 462, 17, 41, "Input"],
+Cell[3654, 113, 26, 0, 30, "Input"],
+Cell[3683, 115, 461, 17, 34, "Input"],
+Cell[4147, 134, 26, 0, 30, "Input"],
+Cell[4176, 136, 461, 17, 34, "Input"],
+Cell[4640, 155, 26, 0, 30, "Input"],
+Cell[4669, 157, 457, 17, 34, "Input"],
+Cell[5129, 176, 26, 0, 30, "Input"],
+Cell[5158, 178, 492, 19, 34, "Input"],
+Cell[5653, 199, 26, 0, 30, "Input"],
+Cell[5682, 201, 446, 16, 34, "Input"],
+Cell[6131, 219, 197, 5, 90, "Input"],
+Cell[6331, 226, 192, 5, 102, "Input"],
+Cell[6526, 233, 134, 3, 66, "Input"],
+Cell[6663, 238, 134, 3, 66, "Input"],
+Cell[6800, 243, 133, 3, 66, "Input"],
+Cell[6936, 248, 133, 3, 66, "Input"],
+Cell[7072, 253, 133, 3, 66, "Input"],
+Cell[7208, 258, 133, 3, 66, "Input"]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

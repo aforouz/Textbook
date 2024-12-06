@@ -1,0 +1,103 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      2531,         94]
+NotebookOptionsPosition[      2130,         76]
+NotebookOutlinePosition[      2473,         91]
+CellTagsIndexPosition[      2430,         88]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Phi]", "[", 
+    RowBox[{"p_", ",", "q_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"-", "p"}], "+", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["p", "2"], "+", "q"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p", "=", "100000000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"q", "=", "1."}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", " ", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    RowBox[{"2", "p", " ", "x"}], "-", "q"}], "\[Equal]", "0"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"\[Phi]", "[", 
+  RowBox[{"p", ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ FractionBox["q", 
+  RowBox[{"p", "+", 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["p", "2"], "+", "q"}]]}]]}], "Input",
+ CellChangeTimes->{{3.684373227261488*^9, 3.6843734126217475`*^9}, {
+  3.684373465881822*^9, 3.684373466291823*^9}},
+ FontSize->24],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     RowBox[{"-", "2.`*^8"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "5.`*^-9"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.6843733342016377`*^9, 3.684373413461749*^9}, 
+   3.6843734680818253`*^9},
+ FontSize->24],
+
+Cell[BoxData["0.`"], "Output",
+ CellChangeTimes->{{3.6843733342016377`*^9, 3.684373413461749*^9}, 
+   3.6843734680818253`*^9},
+ FontSize->24],
+
+Cell[BoxData["5.`*^-9"], "Output",
+ CellChangeTimes->{{3.6843733342016377`*^9, 3.684373413461749*^9}, 
+   3.6843734680918255`*^9},
+ FontSize->24]
+}, Open  ]]
+},
+WindowSize->{616, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 926, 29, 289, "Input"],
+Cell[1496, 53, 326, 10, 47, "Output"],
+Cell[1825, 65, 141, 3, 42, "Output"],
+Cell[1969, 70, 145, 3, 44, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
